@@ -71,6 +71,24 @@ canteen-management-system/
 ├── screenshots/              # UI screenshots
 └── README.md
 ```
+## 📸 UI Screenshots
+
+### 🔐 Login Page
+![Login Page](images/login.png)
+
+### 📝 Register Page
+![Register Page](images/register.png)
+
+### 🍔 Menu Page
+![Menu](images/menu.png)
+
+### 📦 Orders Page
+![Orders](images/orders.png)
+
+### ✅ Thank You Page
+![Thank You](images/thankyou.png)
+
+
 ---
 
 ## Steps to Run the Project
