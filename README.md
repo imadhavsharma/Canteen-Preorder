@@ -36,7 +36,9 @@ This project demonstrates backend API development, database management, and fron
 
 ---
 
-### Detailed Folder Structure (Project Code)
+## 📁 Detailed Folder Structure (Project Code)
+
+```plaintext
 canteen-management-system/
 ├── src/
 │   ├── backend/              # PHP APIs (login, register, orders)
@@ -68,9 +70,7 @@ canteen-management-system/
 │
 ├── screenshots/              # UI screenshots
 └── README.md
-
-
-
+```
 ---
 
 ## Steps to Run the Project
