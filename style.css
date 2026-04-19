@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* CENTER DASHBOARD */
+.dashboard-center {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTONS */
+.center-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #00ffd5;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* MAIN CONTENT */
+.main {
+    padding: 30px;
+}
+
+/* GRID */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #222;
+}
+
+/* BUTTON BASE */
+button {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    background: #00ffcc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* HOVER */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* CLICK PRESS EFFECT */
+button:active {
+    transform: scale(0.95);
+}
+
+/* RIPPLE ELEMENT */
+button span {
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    transform: scale(0);
+    border-radius: 50%;
+    animation: ripple 0.5s linear;
+    pointer-events: none;
+}
+
+/* RIPPLE ANIMATION */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+/* ===== CART FIX ===== */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main {
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* ===== ORDERS PAGE ===== */
+
+.order-card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.order-item {
+    background: #2a2a2a;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#snack-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(1px);
+  pointer-events: none; /* allows clicks through */
+  z-index: -1; /* stays in background */
+}
+
+.snack {
+  position: absolute;
+  top: -50px;
+  animation: fall linear forwards;
+  opacity: 0.7;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+.thankyou-body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thankyou-container {
+    text-align: center;
+    background: #111;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,255,200,0.3);
+}
+
+.checkmark {
+    font-size: 60px;
+    color: #00ffd5;
+    animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.thankyou-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
